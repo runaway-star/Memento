@@ -2,7 +2,7 @@
   --svg-color: currentColor;
 }
 
-.star_two {
+.star_two svg {
   width: 20px;
   height: auto;
   max-width: 100%;
