@@ -10,3 +10,12 @@
   margin: auto;
   fill: var(--svg-color);
 }
+
+.star_three {
+  width: 20px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  fill: var(--svg-color);
+}
