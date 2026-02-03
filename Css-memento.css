@@ -29,11 +29,42 @@
   fill: var(--svg-color);
 }
 
+body {
+  margin: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
 .frame {
-  width: 30px;
+  position: relative;
+  width: 400px;
+  aspect-ratio: 427 / 625;
+  color: white;
+}
+
+.frame svg {
+  width: 100%;
   height: auto;
-  max-width: 100%;
   display: block;
-  margin: auto;
-  fill: var(--svg-color);
+}
+
+.frame-content {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.05); /* optionnel : transparence douce */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: auto;
+  border-radius: 8px;
 }
