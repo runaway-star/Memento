@@ -28,3 +28,12 @@
   margin: auto;
   fill: var(--svg-color);
 }
+
+.frame {
+  width: 50px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  fill: var(--svg-color);
+}
