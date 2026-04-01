@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'AmiahCustom'; 
+    font-family: 'Amiah'; 
     src: url('https://raw.githubusercontent.com/runaway-star/starfall/main/Amiah-BF64f1d1dd17e37%203.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'AmiahCustom', sans-serif !important;
+    font-family: 'Amiah', sans-serif !important;
 }
 
 
