@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'AmiahCustom'; 
+    src: url('https://raw.githubusercontent.com/runaway-star/starfall/main/Amiah-BF64f1d1dd17e37%203.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'AmiahCustom', sans-serif !important;
+}
+
+
 :root {
   --svg-color: currentColor;
 }
