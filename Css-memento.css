@@ -7,9 +7,9 @@
     font-display: swap;
 }
 
-
-:root {
-  --svg-color: currentColor;
+/* Application au forum */
+body {
+    font-family: 'Amiah', serif !important;
 }
 
 .star_two {
