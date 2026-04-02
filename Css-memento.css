@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Amiah'; 
-    src: url('https://raw.githubusercontent.com/runaway-star/Memento/main/amiah.woff2') format('woff2');
+    /* On colle ton lien exact entre les parenthèses */
+    src: url('https://github.com/runaway-star/Memento/raw/refs/heads/main/fonts/Amiah-BF64f1d1dd17e37%203.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
