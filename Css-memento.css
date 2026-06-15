@@ -32,3 +32,198 @@
   margin: auto;
   fill: var(--svg-color);
 }
+
+/*** ------------------------------- ***/
+/*** PAGE DE PROFIL POP-UP ---------------- ***/
+#wombat{padding:25px;}
+
+.wombat-overlay {
+    position: fixed;
+    z-index: 990;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%; height: 100%;
+    transition: 0.7s opacity ease;
+    background: var(--neutral);
+}
+.wombat-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wombat-aside {
+    position: fixed;
+    inset: 0;
+    margin: 50px 0 0 650px;
+    z-index: 999;
+    transition: 0.9s ease;
+    visibility: hidden;
+    overflow:auto;
+    opacity: 0;
+    width: 90%;
+    max-width: 800px;
+    background: var(--gradient);
+    box-shadow: var(--shadowBox);
+    border-radius: 10px;
+    height: 740px;
+    transform: translateX(-20%);
+}
+
+.wombat-aside.open {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.profile-top,
+.profile-bottom{
+    background: var(--neutralDarker);
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:25px;
+}
+
+.profile-top{
+    display:grid;
+    grid-template-columns:240px 1fr;
+    gap:30px;
+    margin-bottom:20px;
+}
+
+/*-AVATAR-*/
+.profile_avatar{width:240px;}
+.profile_avatar img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+/*-ID CARD-*/
+.profile-summary{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.page-title{
+    margin:0;
+    font-size:30px!important;
+    line-height:1;
+    text-transform:uppercase;
+    font-family: var(--fontTitle);
+    letter-spacing: 2px;
+}
+
+.profile-rank{
+    text-transform:uppercase;
+    opacity:.8;
+    font-size:12px;
+    text-align:center;
+    margin-top:-20px;
+    font-weight:500;
+}
+
+.profile-status{
+    font-weight:200;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+/*-CONTACT-*/
+.profile_contact{
+    display:flex;
+    gap:25px;
+    margin-top:10px;
+    width:410px!important;
+    justify-content: center;}
+
+/*-PAVE-*/
+.profile-pave{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fill,minmax(200px, 10px));
+}
+
+.pave-card, .profile_contact{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:12px;
+    padding:12px 15px;
+    width:200px;
+}
+
+.pave-card span, .profile_field label{
+    display:block;
+    font-size:10px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:6px;
+    color:var(--accentClr);
+}
+
+.profile_field span {color:var(--accentClr)!important;}
+
+/*-LIENS-*/
+.profile-postlinks{
+    display:flex;
+    gap:15px;
+    margin-top:-10px;  
+}
+
+.profile-postlinks a{
+    padding:6px 80px;
+    border-radius:15px;
+    background:var(--navmain);
+    color:white;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+/*-TITRE SECTION-*/
+.profile-section-title{
+    margin-bottom:20px;
+    color:var(--navmain);
+    font-size:35px;
+    line-height:1;
+    text-transform:uppercase;
+    font-family: var(--fontTitle);
+    letter-spacing: 5px; text-align: center;
+}
+
+/*-CHAMPS INRP-*/
+.profile_content{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fill,minmax(260px,1fr));
+    gap:15px;
+    max-height:none;
+    overflow:visible;
+}
+
+.profile_field{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:15px;
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    margin:0;
+    line-height:1;
+}
+
+/*-RESPONSIVE-*/
+@media screen and (max-width:800px){
+    .profile-top{grid-template-columns:1fr}
+    .profile_avatar{margin:auto;}
+    .profile-summary{text-align:center;}
+    .profile-pave{justify-content:center;}
+    .profile-postlinks{justify-content:center;}
+}
