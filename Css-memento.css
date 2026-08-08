@@ -42,6 +42,15 @@
   fill: var(--svg-color);
 }
 
+.wolf {
+  width: 30px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  fill: var(--svg-color);
+}
+
 /*** ------------------------------- ***/
 /*** PAGE DE PROFIL POP-UP ---------------- ***/
 #wombat{padding:25px;}
